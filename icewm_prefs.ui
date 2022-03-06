@@ -152,6 +152,7 @@
     </property>
     <addaction name="actionOpen"/>
     <addaction name="actionSave"/>
+    <addaction name="actionRestart_IceWM"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -187,6 +188,11 @@
   <action name="actionAuthor_jjholt0147">
    <property name="text">
     <string>Author jjholt0147</string>
+   </property>
+  </action>
+  <action name="actionRestart_IceWM">
+   <property name="text">
+    <string>Restart IceWM</string>
    </property>
   </action>
  </widget>

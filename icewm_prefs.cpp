@@ -3,6 +3,8 @@
 #include <QFile>
 #include <QDir>
 #include <QTextStream>
+#include <QProcess>
+
 static QString clockOn ="TaskBarShowClock=0";
 static QString taskbar ="TaskBarAtTop=0";
 static QString showDesktop ="TaskBarShowShowDesktopButton=0";
@@ -21,7 +23,11 @@ static QString filename ="/.icewm/preferences";
 static QString fullpath = filename.prepend(QDir::homePath());
 QFile file(fullpath);
 
-
+void restartIcewm()
+{
+    QProcess restartIcewmcmd;
+    restartIcewmcmd.execute("killall -HUP icewm");
+}
 void savefile(QString(setting))
 {
 
@@ -220,5 +226,11 @@ void icewm_prefs::on_checkBoxadd_stateChanged(int arg1)
 void icewm_prefs::on_actionAbout_triggered()
 {
 
+}
+
+
+void icewm_prefs::on_actionRestart_IceWM_triggered()
+{
+    restartIcewm();
 }
 

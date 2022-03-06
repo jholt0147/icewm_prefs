@@ -46,6 +46,8 @@ private slots:
 
     void on_actionAbout_triggered();
 
+    void on_actionRestart_IceWM_triggered();
+
 private:
     Ui::icewm_prefs *ui;
 };
