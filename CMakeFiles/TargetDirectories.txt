@@ -1,0 +1,4 @@
+/usr/src/icewm_prefs/CMakeFiles/rebuild_cache.dir
+/usr/src/icewm_prefs/CMakeFiles/edit_cache.dir
+/usr/src/icewm_prefs/CMakeFiles/icewm_prefs.dir
+/usr/src/icewm_prefs/CMakeFiles/icewm_prefs_autogen.dir

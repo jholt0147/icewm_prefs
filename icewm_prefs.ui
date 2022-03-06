@@ -182,7 +182,7 @@
   </action>
   <action name="actionversion_0_0_1a">
    <property name="text">
-    <string>version 0.0.1a</string>
+    <string>version 0.0.2a</string>
    </property>
   </action>
   <action name="actionAuthor_jjholt0147">

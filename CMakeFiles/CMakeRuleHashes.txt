@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+cf9eec5c0e66d5d71396094c66c583f4 CMakeFiles/icewm_prefs_autogen
