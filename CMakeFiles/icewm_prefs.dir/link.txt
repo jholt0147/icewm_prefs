@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/icewm_prefs.dir/icewm_prefs_autogen/mocs_compilation.cpp.o CMakeFiles/icewm_prefs.dir/main.cpp.o CMakeFiles/icewm_prefs.dir/icewm_prefs.cpp.o -o icewm_prefs  /usr/lib64/libQt5Widgets.so.5.15.3 /usr/lib64/libQt5Gui.so.5.15.3 /usr/lib64/libQt5Core.so.5.15.3 
