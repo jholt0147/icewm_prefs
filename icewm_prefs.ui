@@ -14,7 +14,7 @@
    <string>icewm_prefs</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -75,7 +75,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -157,7 +157,8 @@
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionAbout"/>
+    <addaction name="actionversion_0_0_1a"/>
+    <addaction name="actionAuthor_jjholt0147"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
@@ -176,6 +177,16 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionversion_0_0_1a">
+   <property name="text">
+    <string>version 0.0.1a</string>
+   </property>
+  </action>
+  <action name="actionAuthor_jjholt0147">
+   <property name="text">
+    <string>Author jjholt0147</string>
    </property>
   </action>
  </widget>
