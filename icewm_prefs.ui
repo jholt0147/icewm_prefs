@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>319</width>
+    <width>332</width>
     <height>275</height>
    </rect>
   </property>
@@ -14,127 +14,147 @@
    <string>icewm_prefs</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>144</width>
-      <height>178</height>
+      <x>16</x>
+      <y>0</y>
+      <width>301</width>
+      <height>241</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QCheckBox" name="checkBoxClock">
-       <property name="text">
-        <string>Show Clock</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxTB">
-       <property name="text">
-        <string>Taskbar on Top</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxCPU">
-       <property name="text">
-        <string>Show CPU</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxNET">
-       <property name="text">
-        <string>Show Network</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxMEM">
-       <property name="text">
-        <string>Show Memory</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxDesktop">
-       <property name="text">
-        <string>Show Desktop Button</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxAPM">
-       <property name="text">
-        <string>Show APM</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>20</y>
-      <width>165</width>
-      <height>178</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QCheckBox" name="checkBoxMail">
-       <property name="text">
-        <string>Show Mail</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxWP">
-       <property name="text">
-        <string>Show Workplaces</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxWinList">
-       <property name="text">
-        <string>Show Window List Button</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxTaskbar">
-       <property name="text">
-        <string>Show Taskbar</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxAH">
-       <property name="text">
-        <string>Taskbar AutoHide</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxStart">
-       <property name="text">
-        <string>Show Start Menu</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBoxadd">
-       <property name="text">
-        <string>Show Address Bar</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Toolbar</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>144</width>
+        <height>185</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="checkBoxClock">
+         <property name="text">
+          <string>Show Clock</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxTB">
+         <property name="text">
+          <string>Taskbar on Top</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxCPU">
+         <property name="text">
+          <string>Show CPU</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxNET">
+         <property name="text">
+          <string>Show Network</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxMEM">
+         <property name="text">
+          <string>Show Memory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxDesktop">
+         <property name="text">
+          <string>Show Desktop Button</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxAPM">
+         <property name="text">
+          <string>Show APM</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>154</x>
+        <y>0</y>
+        <width>141</width>
+        <height>185</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="checkBoxMail">
+         <property name="text">
+          <string>Show Mail</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxWP">
+         <property name="text">
+          <string>Show Workplaces</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxWinList">
+         <property name="text">
+          <string>Show Window List Button</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxTaskbar">
+         <property name="text">
+          <string>Show Taskbar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxAH">
+         <property name="text">
+          <string>Taskbar AutoHide</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxStart">
+         <property name="text">
+          <string>Show Start Menu</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxadd">
+         <property name="text">
+          <string>Show Address Bar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -142,8 +162,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>319</width>
-     <height>19</height>
+     <width>332</width>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
