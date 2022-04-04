@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>332</width>
-    <height>275</height>
+    <height>306</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,12 +20,15 @@
       <x>16</x>
       <y>0</y>
       <width>301</width>
-      <height>241</height>
+      <height>261</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Toolbar</string>
+      <string>Taskbar</string>
      </attribute>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
@@ -40,7 +43,7 @@
        <item>
         <widget class="QCheckBox" name="checkBoxClock">
          <property name="text">
-          <string>Show Clock</string>
+          <string>Clock</string>
          </property>
         </widget>
        </item>
@@ -54,35 +57,35 @@
        <item>
         <widget class="QCheckBox" name="checkBoxCPU">
          <property name="text">
-          <string>Show CPU</string>
+          <string>CPU Graph</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxNET">
          <property name="text">
-          <string>Show Network</string>
+          <string>Network Graph</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxMEM">
          <property name="text">
-          <string>Show Memory</string>
+          <string>Memory Graph</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxDesktop">
          <property name="text">
-          <string>Show Desktop Button</string>
+          <string>Show Desktop</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxAPM">
          <property name="text">
-          <string>Show APM</string>
+          <string>Battery</string>
          </property>
         </widget>
        </item>
@@ -93,7 +96,7 @@
        <rect>
         <x>154</x>
         <y>0</y>
-        <width>141</width>
+        <width>161</width>
         <height>185</height>
        </rect>
       </property>
@@ -101,59 +104,214 @@
        <item>
         <widget class="QCheckBox" name="checkBoxMail">
          <property name="text">
-          <string>Show Mail</string>
+          <string>Mail</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxWP">
          <property name="text">
-          <string>Show Workplaces</string>
+          <string>Show Workspaces</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxWinList">
          <property name="text">
-          <string>Show Window List Button</string>
+          <string>Windows List</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxTaskbar">
          <property name="text">
-          <string>Show Taskbar</string>
+          <string>Taskbar</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxAH">
          <property name="text">
-          <string>Taskbar AutoHide</string>
+          <string>AutoHide Taskbar</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxStart">
          <property name="text">
-          <string>Show Start Menu</string>
+          <string>Start Menu</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBoxadd">
          <property name="text">
-          <string>Show Address Bar</string>
+          <string>Address Bar</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="labelTaskbar">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>190</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>Hide or Show Taskbar Items</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Menus</string>
      </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>291</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QCheckBox" name="checkBoxProg">
+           <property name="text">
+            <string>Programs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBoxWinList2">
+           <property name="text">
+            <string>Window List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBoxRun">
+           <property name="text">
+            <string>Run</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_5">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_6">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="checkBox_10">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_9">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_4">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_8">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_7">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="labelMenu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>Hide or Show Menu Items</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Misc</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>195</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelRun">
+         <property name="text">
+          <string>Run Command</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditRun"/>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -202,7 +360,7 @@
   </action>
   <action name="actionversion_0_0_1a">
    <property name="text">
-    <string>version 0.0.2a</string>
+    <string>version 0.0.4a</string>
    </property>
   </action>
   <action name="actionAuthor_jjholt0147">

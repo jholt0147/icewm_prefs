@@ -18,7 +18,18 @@ static QString showStart ="TaskBarShowStartMenu=0";
 static QString showWinList = "TaskBarShowWindowListMenu=0";
 static QString showMail = "TaskBarShowMailboxStatus=0";
 static QString showADD = "TaskBarShowAddressBar=0";
-static QString showWP = "TaskBarShowWorksplaces=0";
+static QString showWP = "TaskBarShowWorkspaces=0";
+static QString showProg = "ShowProgramsMenu=0";
+static QString showSettings = "ShowSettingsMenu=0";
+static QString ShowFocus = "ShowFocusModeMenu=0";
+static QString showThemes = "ShowThemesMenu=0";
+static QString showLogout = "ShowLogoutMenu=0";
+static QString showHelp = "ShowHelp=0";
+static QString showLog2 = "ShowLogoutSubMenu=0";
+static QString showAbout = "ShowAbout=0";
+static QString showRun = "ShowRun=0";
+static QString showWinList2 ="ShowWindowList=0";
+static QString runCommand = "RunCommand=";
 static QString filename ="/.icewm/preferences";
 static QString fullpath = filename.prepend(QDir::homePath());
 QFile file(fullpath);
@@ -76,6 +87,10 @@ void icewm_prefs::on_actionSave_triggered()
     savefile(showWP);
     savefile(showADD);
     savefile(showStart);
+    savefile(showProg);
+    savefile(showWinList2);
+    savefile(showRun);
+    savefile(runCommand);
     file.close();
 }
 
@@ -232,5 +247,44 @@ void icewm_prefs::on_actionAbout_triggered()
 void icewm_prefs::on_actionRestart_IceWM_triggered()
 {
     restartIcewm();
+}
+
+
+void icewm_prefs::on_checkBoxProg_stateChanged(int arg1)
+{
+    if(setstate(showProg, arg1) >= 1)
+    {
+        showProg = "ShowProgramsMenu=1";
+    }
+    else
+        showProg = "ShowProgramsMenu=0";
+}
+
+
+void icewm_prefs::on_checkBoxWinList2_stateChanged(int arg1)
+{
+    if(setstate(showWinList2, arg1) >= 1)
+    {
+        showWinList2 = "ShowWindowList=1";
+    }
+    else
+        showWinList2 = "ShowWindowList=0";
+}
+
+
+void icewm_prefs::on_checkBoxRun_stateChanged(int arg1)
+{
+    if(setstate(showWinList2, arg1) >= 1)
+    {
+        showRun = "ShowRun=1";
+    }
+    else
+        showWinList2 = "ShowRun=0";
+}
+
+
+void icewm_prefs::on_lineEditRun_textChanged(const QString &arg1)
+{
+    runCommand = "RunCommand=" + arg1;
 }
 

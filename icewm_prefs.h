@@ -48,6 +48,14 @@ private slots:
 
     void on_actionRestart_IceWM_triggered();
 
+    void on_checkBoxProg_stateChanged(int arg1);
+
+    void on_checkBoxWinList2_stateChanged(int arg1);
+
+    void on_checkBoxRun_stateChanged(int arg1);
+
+    void on_lineEditRun_textChanged(const QString &arg1);
+
 private:
     Ui::icewm_prefs *ui;
 };
