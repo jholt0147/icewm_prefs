@@ -91,6 +91,7 @@ void icewm_prefs::on_actionSave_triggered()
     savefile(showWinList2);
     savefile(showRun);
     savefile(runCommand);
+    savefile(showSettings);
     file.close();
 }
 
@@ -286,5 +287,16 @@ void icewm_prefs::on_checkBoxRun_stateChanged(int arg1)
 void icewm_prefs::on_lineEditRun_textChanged(const QString &arg1)
 {
     runCommand = "RunCommand=" + arg1;
+}
+
+
+void icewm_prefs::on_checkBoxSettings_stateChanged(int arg1)
+{
+    if(setstate(showSettings, arg1) >= 1)
+    {
+        showSettings = "ShowSettingsMenu=1";
+    }
+    else
+        showSettings = "ShowSettingsMenu=0";
 }
 

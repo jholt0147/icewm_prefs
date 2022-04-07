@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -210,16 +210,16 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_5">
+          <widget class="QCheckBox" name="checkBoxSettings">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Settings</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_6">
+          <widget class="QCheckBox" name="checkBoxAbout">
            <property name="text">
-            <string>CheckBox</string>
+            <string>About</string>
            </property>
           </widget>
          </item>
@@ -228,37 +228,37 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <item>
-          <widget class="QCheckBox" name="checkBox_10">
+          <widget class="QCheckBox" name="checkBoxHelp">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Help</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_9">
+          <widget class="QCheckBox" name="checkBoxFocus">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Focus Mode</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_4">
+          <widget class="QCheckBox" name="checkBoxThemes">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Themes</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_8">
+          <widget class="QCheckBox" name="checkBoxLogout">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Logout</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_7">
+          <widget class="QCheckBox" name="checkBoxLogout2">
            <property name="text">
-            <string>CheckBox</string>
+            <string>Logout SubMenu</string>
            </property>
           </widget>
          </item>
@@ -321,7 +321,7 @@
      <x>0</x>
      <y>0</y>
      <width>332</width>
-     <height>20</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

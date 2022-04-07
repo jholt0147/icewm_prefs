@@ -56,6 +56,8 @@ private slots:
 
     void on_lineEditRun_textChanged(const QString &arg1);
 
+    void on_checkBoxSettings_stateChanged(int arg1);
+
 private:
     Ui::icewm_prefs *ui;
 };
